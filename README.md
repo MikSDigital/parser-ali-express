@@ -15,22 +15,15 @@ You will get the following data:
 
 ## How to use
 
+Go to scrapy_aliexpress/spiders/ali.py and replace link in start_urls
+
 Run the script:
 
 ```
-python main.py
+scrapy crawl ali -o ali.csv -t csv
 ```
-
-Insert a link to a store page with all the products
-
-[Example of output file](https://docs.google.com/spreadsheets/d/16AfFWPcB652sF1kQ5J1s7HF3ble-Lv57jGOUglsNg_8/edit?usp=sharing)
-
-If you want to run the script via Tor, then just run Tor browser on 9150 port (default port)
 
 ## Requirements
 
 - Python 3
-- xlwt
-- BeautifulSoup4
-- html5lib
-- PySocks
+- Scrapy
